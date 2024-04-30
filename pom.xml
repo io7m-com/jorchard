@@ -41,9 +41,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/io7m/jorchard</url>
-    <connection>scm:git:https://github.com/io7m/jorchard</connection>
-    <developerConnection>scm:git:https://github.com/io7m/jorchard</developerConnection>
+    <url>https://www.github.com/io7m-com/jorchard</url>
+    <connection>scm:git:https://www.github.com/io7m-com/jorchard</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/jorchard</developerConnection>
   </scm>
 
   <developers>
@@ -56,7 +56,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://www.github.com/io7m/jorchard/issues</url>
+    <url>https://www.github.com/io7m-com/jorchard/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
