@@ -13,3 +13,56 @@ jorchard
 | OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m-com/jorchard/main.linux.temurin.lts.yml)](https://www.github.com/io7m-com/jorchard/actions?query=workflow%3Amain.linux.temurin.lts)|
 | OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jorchard/main.windows.temurin.current.yml)](https://www.github.com/io7m-com/jorchard/actions?query=workflow%3Amain.windows.temurin.current)|
 | OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jorchard/main.windows.temurin.lts.yml)](https://www.github.com/io7m-com/jorchard/actions?query=workflow%3Amain.windows.temurin.lts)|
+
+## jorchard
+
+A generic unbalanced [rose tree](https://en.wikipedia.org/wiki/Rose_tree)
+implementation.
+
+## Features
+
+* Generic, mutable rose trees.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+Assuming an arbitrary type `T`, create a tree with a root value of `x` of
+type `T`:
+
+```
+var t = JOTreeNode.create(x);
+```
+
+Add nodes to the tree:
+
+```
+var t0 = JOTreeNode.create(y0);
+var t1 = JOTreeNode.create(y1);
+var t2 = JOTreeNode.create(y2);
+
+t0.setParent(t);
+t1.setParent(t);
+t2.setParent(t);
+```
+
+Iterate over the tree:
+
+```
+t.forEachDepthFirst(order, (input, depth, node) -> {
+  // ...
+});
+
+t.forEachBreadthFirst(order, (input, depth, node) -> {
+  // ...
+});
+```
+
+Detach nodes from the tree:
+
+```
+t2.detach();
+```
+
