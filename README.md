@@ -4,6 +4,7 @@ jorchard
 [![Maven Central](https://img.shields.io/maven-central/v/com.io7m.jorchard/com.io7m.jorchard.svg?style=flat-square)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.jorchard%22)
 [![Maven Central (snapshot)](https://img.shields.io/nexus/s/com.io7m.jorchard/com.io7m.jorchard?server=https%3A%2F%2Fs01.oss.sonatype.org&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/jorchard/)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m-com/jorchard.svg?style=flat-square)](https://codecov.io/gh/io7m-com/jorchard)
+![Java Version](https://img.shields.io/badge/21-java?label=java&color=007fff)
 
 ![com.io7m.jorchard](./src/site/resources/jorchard.jpg?raw=true)
 
