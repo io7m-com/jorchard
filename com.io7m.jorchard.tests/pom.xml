@@ -36,11 +36,6 @@
     </dependency>
 
     <dependency>
-      <groupId>com.io7m.junreachable</groupId>
-      <artifactId>com.io7m.junreachable.core</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>net.java.quickcheck</groupId>
       <artifactId>quickcheck</artifactId>
     </dependency>
