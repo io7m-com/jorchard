@@ -45,10 +45,18 @@
         <c:change compatible="false" date="2022-01-07T00:00:00+00:00" summary="Require JDK 17"/>
       </c:changes>
     </c:release>
-    <c:release date="2022-04-10T09:36:51+00:00" is-open="false" ticket-system="com.github.io7m.jorchard" version="2.0.1">
+    <c:release date="2022-04-10T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.jorchard" version="2.0.1">
       <c:changes>
         <c:change date="2022-04-10T00:00:00+00:00" summary="Update junreachable"/>
         <c:change date="2022-04-10T00:00:00+00:00" summary="Update jaffirm"/>
+      </c:changes>
+    </c:release>
+    <c:release date="2024-05-12T12:17:58+00:00" is-open="false" ticket-system="com.github.io7m.jorchard" version="2.0.2">
+      <c:changes>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update ch.qos.logback:logback-classic:1.4.14 → 1.5.6."/>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update org.slf4j:slf4j-api:2.0.10 → 2.0.13."/>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update junit.version:5.10.1 → 5.10.2."/>
+        <c:change date="2024-05-05T00:00:00+00:00" summary="Update com.io7m.jaffirm:com.io7m.jaffirm.core:4.0.0 → 4.0.1."/>
       </c:changes>
     </c:release>
   </c:releases>
