@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.io7m.jorchard</groupId>
     <artifactId>com.io7m.jorchard</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
   </parent>
   <artifactId>com.io7m.jorchard.tests</artifactId>
 
@@ -18,7 +18,9 @@
   <url>https://www.io7m.com/software/jorchard/</url>
 
   <properties>
+    <spotbugs.skip>true</spotbugs.skip>
     <mdep.analyze.skip>true</mdep.analyze.skip>
+    <checkstyle.skip>true</checkstyle.skip>
   </properties>
 
   <dependencies>
@@ -31,11 +33,6 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>com.io7m.jorchard.generators</artifactId>
       <version>${project.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.io7m.junreachable</groupId>
-      <artifactId>com.io7m.junreachable.core</artifactId>
     </dependency>
 
     <dependency>
@@ -54,12 +51,10 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 

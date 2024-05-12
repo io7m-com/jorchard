@@ -1,0 +1,52 @@
+
+## jorchard
+
+A generic unbalanced [rose tree](https://en.wikipedia.org/wiki/Rose_tree)
+implementation.
+
+## Features
+
+* Generic, mutable rose trees.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+Assuming an arbitrary type `T`, create a tree with a root value of `x` of
+type `T`:
+
+```
+var t = JOTreeNode.create(x);
+```
+
+Add nodes to the tree:
+
+```
+var t0 = JOTreeNode.create(y0);
+var t1 = JOTreeNode.create(y1);
+var t2 = JOTreeNode.create(y2);
+
+t0.setParent(t);
+t1.setParent(t);
+t2.setParent(t);
+```
+
+Iterate over the tree:
+
+```
+t.forEachDepthFirst(order, (input, depth, node) -> {
+  // ...
+});
+
+t.forEachBreadthFirst(order, (input, depth, node) -> {
+  // ...
+});
+```
+
+Detach nodes from the tree:
+
+```
+t2.detach();
+```
